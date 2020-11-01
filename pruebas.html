@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.default.css" type="text/css" />
+        <link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+        <script type="text/javascript" src="prettify/prettify.js"></script>
+        <script type="text/javascript" src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    <body>
+        <div><button id="agregar">agregar</button></div>
+        
+        
+           
+  <h4 class="widgettitle">Deletable Row</h4>
+            	<table class="table table-bordered" id="tableta">
+                    <colgroup>
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Rendering engine</th>
+                            <th>Browser</th>
+                            <th>Platform(s)</th>
+                            <th>Engine version</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet Explorer 4.0</td>
+                            <td>Win 95+</td>
+                            <td>4</td>
+                            <td class="centeralign"><a href="" class="deleterow"><span class="icon-trash"></span></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+<script>
+jQuery(document).ready(function(){
+    jQuery('#agregar').click(function(){
+        jQuery('#tableta > tbody:last-child').append('<tr><td colspan="6"><span>holitas</span></td></tr>');
+    });
+});
+</script> 
+
+
+    </body>
+</html>
